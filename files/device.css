@@ -1,0 +1,350 @@
+:root {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 8rem;
+  width: 100%;
+  background: linear-gradient(-45DEG, rgb(252, 158, 51) 0%, rgb(253, 107, 107) 50%,rgb(252, 158, 51) 100%);
+  padding: 1px 1px 15px 0px;
+  position: sticky;
+  font-size: 2rem;
+  color: white;
+  top: 0;
+  left: 0;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+.header-div{
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #header {
+    text-align: center;
+    height: 8rem;
+  }
+}
+
+.im-content{
+  flex: 1;
+  padding: 0 2rem;
+}
+@media (max-width: 768px) {
+  .eye-grabber {
+    max-width: max-content;
+    padding-bottom: 8rem;
+  }
+}
+.home h1{
+  font-size: 5rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.im-content{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #353333;
+}
+
+
+
+.im {
+display: flex ;  
+justify-content: space-evenly;
+}
+@media (max-width: 758px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .im {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+  }
+
+  .im-content {
+    margin-top: 150px; /* Add margin to separate images and content */
+  }
+}
+.btn1 {
+  border: none;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  background-color: #e23d3d;
+  color: #fafafa;
+  outline: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.2s;
+}
+
+.btn1:hover {
+  background-color: #f84848;
+  cursor: pointer;
+}
+.btn1:active {
+  transform: scale(0.9);
+}
+
+.header-div{
+  max-width: 95rem;
+width: auto;  
+margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .header-content-div {
+    max-width: 75rem;
+  }
+}
+
+nav{
+  position: relative;
+  top: 0.1rem;
+  float: right;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.2rem 0;
+  height: 0;
+}
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    float: none;
+    font-size: 1.4rem;
+  }
+}
+.nav-link{
+  text-decoration-line: none;
+  color: rgb(48, 45, 45);
+  margin: 0 0.5rem;
+  padding: 0 0.7rem;
+  transition: border-bottom 0.2s;
+}
+@media (max-width: 768px) {
+  .nav-link {
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+.nav-link:hover {
+  color: #e23d3d;
+  border-bottom: 2px solid #e23d3d;
+}
+
+.im{
+  width:100%;
+  height: 200px;
+  display: flex;
+  padding-top: 1rem;
+}
+
+main{
+  text-align: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+section{
+  overflow: hidden;
+  padding-top: 50px;
+
+}
+
+.home{
+  background: linear-gradient(to top, rgb(247, 247, 248) 0%, rgb(234, 246, 252) 50%, rgb(252, 252, 253) 100%);
+  min-height: 50rem;
+  height: auto;
+  margin: 0 auto;
+  justify-content: start;
+  max-width: 100%;
+  color: black;
+}
+
+
+.section-heading{
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding: 4rem 0 2rem 0;
+}
+
+.vari{
+  font-size: 2rem;
+  text-align: start;
+  padding: 0 2rem 5rem 2rem;
+  width: auto;
+  justify-content: space-around;
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+.varieties{
+  padding: 9rem 0 5rem 0;
+}
+
+#varieties{
+  background: linear-gradient(to right, #e6e5f7 0%, #f2edff 25%, #edd2f7 50%, #eee8fd 75%, #e7e6f8 100%);
+}
+
+.title{
+  float: left;
+  background-color: #fafafa;
+  height: 35rem;
+  width: 25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+@media (max-width: 768px) {
+  .title {
+    width: auto;
+    max-width: 100%;
+    min-width: 20rem;
+    margin: 1.5rem auto;
+    height: auto;
+  }
+}
+
+.title img {
+  width: 100%;
+  max-width: 48rem;
+  max-height: 15rem;
+  border-radius: 0.5rem;
+}
+.title h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: red;
+  margin: 0;
+  text-align: center;
+}
+.title p {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+.title:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+}
+#service {
+  background: radial-gradient(circle, #fae2ce 0%, #e0f5f8 25%, #ffeff1 50%, #ebfdff 75%, #fde4eb 100%);
+    margin: 0 auto;
+  padding-top: 12rem;
+}
+.bars {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 2rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .bars {
+    flex-flow: row wrap;
+  }
+  .icon-container {
+    margin: 0 2.5rem;
+  }
+}
+.icon-container {
+  max-width: 20rem;
+  flex: 1;
+}
+.icon-container img {
+  height: 150px;
+  width: 250px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.txt-container {
+  flex: 1;
+  padding: 2rem;
+}
+.txt-container h5 {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.txt-container p {
+  font-size: 2.3rem;
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .bars {
+    flex-direction: column; /* Change to vertical layout */
+    width: 90%;
+  }
+
+  .icon-container {
+    order: 1;
+    justify-content: center; /* Image comes first */
+    padding-left: 40px;
+  }
+
+  .txt-container {
+    order: 2; /* Text comes after */
+  }
+}
+#benifits {
+  background: linear-gradient(to top right, #e8f4f7 0%, #faf0e8 25%, #fde7ed 50%, #fcf0e6 75%, #edfbfd 100%);
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+#contact {
+  background: linear-gradient(90DEG, rgb(229, 253, 229) 0%, rgb(249, 253, 249) 25%, rgb(222, 250, 218) 50%,rgb(247, 253, 246) 75%, rgb(226, 252, 222) 100%);
+  color: black;
+  height: 450px;
+}
+#contact h6 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+input[type="email"] {
+  border: none;
+  outline: 0;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .contact{
+    padding-top: 10rem;
+  }
+  #contact h6 {
+    font-size: 2rem;
+  }
+  #contact input[type="submit"],
+  #contact input[type="email"] {
+    margin: 1rem 1rem 0 1rem;
+  }
+}
+footer {
+  font-size: 1.8rem;
+  background: linear-gradient(-45DEG, rgb(252, 158, 51) 0%, rgb(253, 107, 107) 50%,rgb(252, 158, 51) 100%);
+  text-align: center;
+  padding: 0.5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #fafafa;
+}
+footer a {
+  color: #e3e3e3;
+}
